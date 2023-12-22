@@ -36,7 +36,7 @@ if (process.env.SCOPE) {
 }
 
 // On successful install, users will be redirected to /oauth-callback
-const REDIRECT_URI = `https://ec2-18-118-184-221.us-east-2.compute.amazonaws.com:${PORT}/oauth-callback`;
+const REDIRECT_URI = `http://18.118.184.221:${PORT}/oauth-callback`;
 
 //===========================================================================//
 
@@ -215,5 +215,5 @@ app.get('/error', (req, res) => {
   res.end();
 });
 
-app.listen(PORT, () => console.log(`=== Starting your app on https://ec2-18-118-184-221.us-east-2.compute.amazonaws.com:${PORT} ===`));
-opn(`https://ec2-18-118-184-221.us-east-2.compute.amazonaws.com:${PORT}`);
+app.listen(PORT, () => console.log(`=== Starting your app on http://18.118.184.221:${PORT} ===`));
+opn(`http://18.118.184.221:${PORT}`);
