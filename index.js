@@ -36,7 +36,7 @@ if (process.env.SCOPE) {
 }
 
 // On successful install, users will be redirected to /oauth-callback
-const REDIRECT_URI = `http://18.118.184.221:${PORT}/oauth-callback`;
+const REDIRECT_URI = `https://3.15.208.159:${PORT}/oauth-callback`;
 
 //===========================================================================//
 
@@ -216,4 +216,4 @@ app.get('/error', (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`=== Starting your app on http://18.118.184.221:${PORT} ===`));
-opn(`http://18.118.184.221:${PORT}`);
+opn(`https://3.15.208.159:${PORT}`);
